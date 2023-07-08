@@ -1,0 +1,182 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Navigation Menu */
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar-dark .navbar-brand:hover {
+  opacity: 0.8;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1rem;
+  margin-left: 10px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+/* Search Section */
+.search-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container input[type="search"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #6c757d;
+  border-radius: 4px;
+}
+
+.search-container button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  opacity: 0.8;
+}
+
+/* Searched Result Section */
+.result-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.result-section h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#superhero-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#superhero {
+  width: 280px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  text-align: center;
+}
+
+#superhero #name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#superhero #id,
+#superhero #comic,
+#superhero #series,
+#superhero #stories {
+  margin-bottom: 5px;
+}
+
+#superhero #buttons button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#superhero #buttons button:first-child {
+  margin-right: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+#superhero #buttons button:last-child {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+}
+
+#superhero #buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Snackbar for Favourite Addition */
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #a6445d;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 1rem;
+}
+
+#snackbar.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
